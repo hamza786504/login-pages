@@ -35,7 +35,7 @@ li-icon {
   padding: 24px;
   border-radius: 8px;
   margin: 0 auto;
-  background: var(--color-background-container, #fff);
+  background: var(-color-background-container, #fff);
 }
 .header-content .content-heading {
   line-height: 1.25;
@@ -46,17 +46,17 @@ li-icon {
 .mt-24 {
   margin-top: 24px;
 }
-.form__input--floating {
+.form-input-floating {
   position: relative;
   background-color: #fff
 }
 
-.form__input--floating * {
+.form-input-floating * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box
 }
 
-.form__input--floating>label {
+.form-input-floating>label {
   
   position: absolute;
   top: 0;
@@ -72,7 +72,7 @@ li-icon {
   border: 2px solid  rgb(10 102 194);;
 }
 
-.form__input--floating>input {
+.form-input-floating>input {
  
   line-height: 1.33333;
   font-weight: 400;
@@ -84,7 +84,7 @@ li-icon {
   border-radius: 4px !important
 }
 
-.form__input--floating>input .form__label--floating--IE {
+.form-input-floating>input .form-label-floating-IE {
   top: -10px;
   font-size: 1.4rem;
   line-height: 1.42857;
@@ -92,7 +92,7 @@ li-icon {
   color: rgba(0,0,0,0.9)
 }
 
-.form__input--floating>input:focus+label {
+.form-input-floating>input:focus+label {
   top: -10px;
   font-size: 14px;
   line-height: 1.42857;
@@ -100,7 +100,7 @@ li-icon {
   color: rgb(10 102 194);
 }
 
-.form__input--floating>input:valid+label {
+.form-input-floating>input:valid+label {
   top: -10px;
   font-size: 1rem;
   line-height: 1.42857;
@@ -108,7 +108,7 @@ li-icon {
   color: rgba(0,0,0,0.9)
 }
 
-.form__input--floating>input:active+label {
+.form-input-floating>input:active+label {
   top: -10px;
   font-size: 1rem;
   line-height: 1.42857;
@@ -116,7 +116,7 @@ li-icon {
   color: rgba(0,0,0,0.9)
 }
 
-.form__input--floating>input:-webkit-autofill+label {
+.form-input-floating>input:-webkit-autofill+label {
   top: -10px;
   font-size: 1rem;
   line-height: 1.42857;
@@ -124,19 +124,19 @@ li-icon {
   color: rgba(0,0,0,0.9)
 }
 
-.form__input--floating>input:-webkit-autofill {
+.form-input-floating>input:-webkit-autofill {
   z-index: 0
 }
 
-.form__input--floating>input#password {
+.form-input-floating>input#password {
   padding-right: 52px
 }
 
-.form__input--floating>input#password::-ms-reveal {
+.form-input-floating>input#password::-ms-reveal {
   display: none
 }
 
-.form__input--floating .force-float {
+.form-input-floating .force-float {
   top: -10px;
   font-size: 1.4rem;
   line-height: 1.42857;
@@ -144,21 +144,21 @@ li-icon {
   color: rgba(0,0,0,0.9)
 }
 
-button.from__button--floating,a[role="button"].from__button--floating {
+button.from-button-floating,a[role="button"].from-button-floating {
   height: 52px;
   line-height: 52px
 }
 
-button.from__button--floating:visited,button.from__button--floating:active,button.from__button--floating:hover,button.from__button--floating:link,a[role="button"].from__button--floating:visited,a[role="button"].from__button--floating:active,a[role="button"].from__button--floating:hover,a[role="button"].from__button--floating:link {
+button.from-button-floating:visited,button.from-button-floating:active,button.from-button-floating:hover,button.from-button-floating:link,a[role="button"].from-button-floating:visited,a[role="button"].from-button-floating:active,a[role="button"].from-button-floating:hover,a[role="button"].from-button-floating:link {
   color: #0073b1;
   text-decoration: none
 }
 
-.login__form {
+.login-form {
   margin: auto
 }
 
-.form__input--floating>input#password {
+.form-input-floating>input#password {
   padding-right: 52px;
 }
 textarea, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
@@ -187,7 +187,7 @@ textarea, input[type="date"], input[type="datetime"], input[type="datetime-local
 
 
 
-.button__password-visibility {
+.button-password-visibility {
   background-color: rgba(0,0,0,0);
   border: 0;
   border-radius: 2px;
@@ -217,26 +217,26 @@ textarea, input[type="date"], input[type="datetime"], input[type="datetime-local
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   vertical-align: middle;
   z-index: 0;
-  color: var(--color-action, #0a66c2) !important;
+  color: var(-color-action, #0a66c2) !important;
   border-radius: 28px !important;
   position: absolute;
   z-index: 1;
   top: 14px;
   right: 4px;
 }
-   .btn__tertiary--medium.active-not-disabled {
+   .btn-tertiary-medium.active-not-disabled {
   background-color: rgba(152,216,244,0.45); 
   color: #004b7c;
 }
-.btn__tertiary--medium:hover {
-  background: var(--color-background-none-tint-action-active, #d0e8ff) !important;
+.btn-tertiary-medium:hover {
+  background: var(-color-background-none-tint-action-active, #d0e8ff) !important;
 }
 .forgot-password {
   position: relative;
   left: -8px;
   margin-top: 8px;
 }
-.btn__tertiary--medium {
+.btn-tertiary-medium {
   background-color: rgba(0,0,0,0);
   border: 0;
   border-radius: 2px;
@@ -265,11 +265,11 @@ textarea, input[type="date"], input[type="datetime"], input[type="datetime-local
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   vertical-align: middle;
   z-index: 0;
-  color: var(--color-action, #0a66c2) !important;
+  color: var(-color-action, #0a66c2) !important;
   border-radius: 28px !important;
 }
 
-.login__form .login__form_action_container {
+.login-form .login-form_action_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -279,21 +279,21 @@ textarea, input[type="date"], input[type="datetime"], input[type="datetime-local
   flex-direction: row;
   padding-top: 16px;
 }
-.login__form button, .login__form a[role=button] {
+.login-form button, .login-form a[role=button] {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
-button.from__button--floating, a[role="button"].from__button--floating {
+button.from-button-floating, a[role="button"].from-button-floating {
   height: 52px;
   line-height: 52px;
   width: 100%;
 }
-.btn__primary--large:hover:not(:disabled):not(.disabled), .btn__primary--large.hover-not-disabled {
+.btn-primary-large:hover:not(:disabled):not(.disabled), .btn-primary-large.hover-not-disabled {
   background-color: #08507a;
   color: #fff;
 }
-.btn__primary--large {
+.btn-primary-large {
   background-color: #0073b1;
   border: 0;
   border-radius: 2px;
@@ -323,7 +323,7 @@ button.from__button--floating, a[role="button"].from__button--floating {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
   vertical-align: middle;
   z-index: 0;
-  background: var(--color-action, #0a66c2) !important;
+  background: var(-color-action, #0a66c2) !important;
   border-radius: 28px !important;
 }
 .or-separator{
@@ -431,7 +431,7 @@ button.from__button--floating, a[role="button"].from__button--floating {
 }
 
 
-.footer__base {
+.footer-base {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,7 +441,7 @@ button.from__button--floating, a[role="button"].from__button--floating {
   -ms-flex-align: center;
   align-items: center;
 }
-.footer__base .footer__base__wrapper {
+.footer-base .footer-base-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -454,15 +454,15 @@ button.from__button--floating, a[role="button"].from__button--floating {
   justify-content: center;
   margin: auto;
 }
-#app__container .footer__base__wrapper p.copyright {
+#app-container .footer-base-wrapper p.copyright {
   font-size: 1.2rem;
   line-height: 1.33333;
   font-weight: 400;
   color: rgba(0,0,0,0.9);
-  color: var(--color-text, #000);
+  color: var(-color-text, #000);
   padding: 0 8px 0 0;
 }
-.footer__base .footer__base__nav-list {
+.footer-base .footer-base-nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -470,12 +470,12 @@ button.from__button--floating, a[role="button"].from__button--floating {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
-.footer__base .a11y__label {
+.footer-base .a11y-label {
   position: absolute;
   text-indent: -999999px;
   display: inline-block;
 }
-.footer__base .footer__base__nav-list li {
+.footer-base .footer-base-nav-list li {
   font-size: 1.2rem;
   line-height: 1.33333;
   font-weight: 400;
@@ -499,20 +499,20 @@ li-icon[type="linkedin-logo"][size="14dp"] {
   width: 5.6rem;
   height: 1.4rem;
 }
-.footer__base .footer__base__nav-list a {
+.footer-base .footer-base-nav-list a {
   font-size: 14px;
   line-height: 1.33333;
   font-weight: 600;
   text-decoration: none;
   color: rgba(0,0,0,0.6);
-  color: var(--color-text-low-emphasis, rgba(0,0,0,0.6));
+  color: var(-color-text-low-emphasis, rgba(0,0,0,0.6));
 }
-.footer__base .footer__base__nav-list a:hover {
+.footer-base .footer-base-nav-list a:hover {
   text-decoration: underline;
 }
 
 
- .alternate-signin__btn {
+ .alternate-signin-btn {
   background-color: rgba(0,0,0,0);
   border: 0;
   border-radius: 2px;
@@ -543,7 +543,7 @@ li-icon[type="linkedin-logo"][size="14dp"] {
   z-index: 0;
   -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.6), inset 0 0 0 2px rgba(0,0,0,0), inset 0 0 0 1px rgba(0,0,0,0);
   box-shadow: inset 0 0 0 1px rgba(0,0,0,0.6), inset 0 0 0 2px rgba(0,0,0,0), inset 0 0 0 1px rgba(0,0,0,0);
-  color: var(--color-text-low-emphasis-shift, rgba(0,0,0,0.6)) !important;
+  color: var(-color-text-low-emphasis-shift, rgba(0,0,0,0.6)) !important;
   border-radius: 28px !important;
   display: -webkit-box;
   display: -ms-flexbox;

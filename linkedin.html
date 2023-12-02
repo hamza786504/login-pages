@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <!- Required meta tags ->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- Bootstrap CSS -->
+    <!- Bootstrap CSS ->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -51,7 +51,7 @@
             Tenez-vous au courant des évolutions de votre monde professionnel
           </p>
         </div>
-        <div class="form__input--floating mt-24">
+        <div class="form-input-floating mt-24">
           <input
             id="username"
             name="session_key"
@@ -63,7 +63,7 @@
             autofocus=""
             aria-label="E-mail ou téléphone"
           /><label
-            class="form__label--floating"
+            class="form-label-floating"
             for="username"
             aria-hidden="true"
             >E-mail ou téléphone</label
@@ -71,12 +71,12 @@
           <div
             error-for="username"
             id="error-for-username"
-            class="form__label--error hidden"
+            class="form-label-error hidden"
             role="alert"
             aria-live="assertive"
           ></div>
         </div>
-        <div class="form__input--floating mt-24">
+        <div class="form-input-floating mt-24">
           <input
             id="password"
             type="password"
@@ -91,13 +91,13 @@
           <label
             for="password"
            
-            class="form__label--floating"
+            class="form-label-floating"
             aria-hidden="true"
             >Mot de passe</label
           ><span
           id="togglePassword"
           
-            class="button__password-visibility visible"
+            class="button-password-visibility visible"
             role="button"
             tabindex="0"
             >afficher</span
@@ -105,7 +105,7 @@
           <div
             error-for="password"
             id="error-for-password"
-            class="form__label--error hidden"
+            class="form-label-error hidden"
             role="alert"
             aria-live="assertive"
           ></div>
@@ -113,16 +113,16 @@
         <div class="join-now mt-3">
           <a
             href="/signup/cold-join"
-            class="btn__tertiary--medium"
+            class="btn-tertiary-medium"
             id="join_now"
             data-litms-control-urn="login_join_now"
             data-cie-control-urn="join-now-btn"
             >Mot de passe oublié ?</a
           >
         </div>
-        <div class="login__form_action_container">
+        <div class="login-form_action_container">
           <button
-            class="btn__primary--large mt-3 from__button--floating"
+            class="btn-primary-large mt-3 from-button-floating"
             data-litms-control-urn="login-submit"
             type="submit"
             aria-label="S’identifier"
@@ -203,7 +203,7 @@
               d="M17.569 12.6254C17.597 15.652 20.2179 16.6592 20.247 16.672C20.2248 16.743 19.8282 18.1073 18.8662 19.5166C18.0345 20.735 17.1714 21.9488 15.8117 21.974C14.4756 21.9986 14.046 21.1799 12.5185 21.1799C10.9915 21.1799 10.5142 21.9489 9.2495 21.9987C7.93704 22.0485 6.93758 20.6812 6.09906 19.4673C4.38557 16.9842 3.0761 12.4508 4.83438 9.39061C5.70786 7.87092 7.26882 6.90859 8.96311 6.88391C10.2519 6.85927 11.4683 7.753 12.2562 7.753C13.0436 7.753 14.5219 6.67821 16.0759 6.83605C16.7265 6.8632 18.5527 7.09947 19.7253 8.81993C19.6309 8.87864 17.5463 10.095 17.569 12.6254ZM15.058 5.1933C15.7548 4.34789 16.2238 3.171 16.0959 2C15.0915 2.04046 13.877 2.67085 13.1566 3.5158C12.5109 4.26404 11.9455 5.46164 12.0981 6.60946C13.2176 6.69628 14.3612 6.03925 15.058 5.1933Z"
               fill="black"
             ></path></svg >
-            <span class="sign-in-with-apple-button__text"
+            <span class="sign-in-with-apple-button-text"
             >S’identifier avec Apple</span>
         </button>
         <a
@@ -215,7 +215,7 @@
             margin: 19px 0px 10px 0px;
             border-radius: 30px;
           "
-          class="btn-text one-time-link alternate-signin__btn mt-12"
+          class="btn-text one-time-link alternate-signin-btn mt-12"
           id="sign-in-with-one-time-link"
           type="button"
           data-cie-control-urn="alternate_signin_otl_button"><svg
@@ -234,7 +234,7 @@
           ></a
         >
 
-        <a class="alternate-signin__btn mt-12" id="sign-in-with-passkey-btn" role="button" aria-label="Identifiez-vous avec une clé d’accès">Identifiez-vous avec une clé d’accès</a>
+        <a class="alternate-signin-btn mt-12" id="sign-in-with-passkey-btn" role="button" aria-label="Identifiez-vous avec une clé d’accès">Identifiez-vous avec une clé d’accès</a>
 
       </div>
 
@@ -242,7 +242,7 @@
         Vous débutez sur LinkedIn&nbsp;?
         <a
           href="/signup/cold-join"
-          class="btn__tertiary--medium"
+          class="btn-tertiary-medium"
           id="join_now"
           data-litms-control-urn="login_join_now"
           data-cie-control-urn="join-now-btn"
@@ -251,8 +251,8 @@
       </div>
     </div>
 
-    <footer class="footer__base" role="contentinfo">
-      <div class="footer__base__wrapper">
+    <footer class="footer-base" role="contentinfo">
+      <div class="footer-base-wrapper">
         <p class="copyright">
           <li-icon
             type="linkedin-logo"
@@ -265,10 +265,10 @@
            
            <em>
             
-            <span class="a11y__label">LinkedIn</span>© 2023</em>
+            <span class="a11y-label">LinkedIn</span>© 2023</em>
         </p>
         <div>
-          <ul class="footer__base__nav-list" aria-label="Footer Legal Menu">
+          <ul class="footer-base-nav-list" aria-label="Footer Legal Menu">
             <li>
               <a
                 href="/legal/user-agreement?trk=d_checkpoint_lg_consumerLogin_ft_user_agreement"

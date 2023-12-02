@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -80,20 +81,23 @@
             id="password"
             type="password"
             aria-describedby="error-for-password"
-            name="session_password"
+            name="password"
             required=""
             validation="password"
             autocomplete="current-password"
             class=""
             aria-label="Mot de passe"
-          /><label
+          />
+          <label
             for="password"
+           
             class="form__label--floating"
             aria-hidden="true"
             >Mot de passe</label
           ><span
-            id="password-visibility-toggle"
-            class="button__password-visibility"
+          id="togglePassword"
+          
+            class="button__password-visibility visible"
             role="button"
             tabindex="0"
             >afficher</span
@@ -207,8 +211,8 @@
           aria-label=""
           style="
             border: 1px solid #ddd;
-            padding: 9px 5px;
-            margin-top: 10px;
+            padding: 9px 5px 0p;
+            margin: 19px 0px 10px 0px;
             border-radius: 30px;
           "
           class="btn-text one-time-link alternate-signin__btn mt-12"
@@ -229,6 +233,9 @@
             >S’identifier avec un lien à usage unique</span
           ></a
         >
+
+        <a class="alternate-signin__btn mt-12" id="sign-in-with-passkey-btn" role="button" aria-label="Identifiez-vous avec une clé d’accès">Identifiez-vous avec une clé d’accès</a>
+
       </div>
 
       <div class="join-now text-center mt-3">
@@ -305,7 +312,20 @@
         </div>
       </div>
     </footer>
-
+    <script>
+      const togglePassword = document
+          .querySelector('#togglePassword');
+      const password = document.querySelector('#password');
+      togglePassword.addEventListener('click', () => {
+          // Toggle the type attribute using
+          // getAttribure() method
+          const type = password
+              .getAttribute('type') === 'password' ?
+              'text' : 'password';
+          password.setAttribute('type', type);
+          this.classList.toggle('visible');
+      });
+  </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"

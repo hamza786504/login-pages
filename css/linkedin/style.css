@@ -57,10 +57,7 @@ li-icon {
 }
 
 .form__input--floating>label {
-  font-size: 1rem;
-  line-height: 1.33333;
-  font-weight: 400;
-  color: rgba(0,0,0,0.6);
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -70,8 +67,13 @@ li-icon {
   transition: .2s all
 }
 
+
+#username:focus, #password:focus{
+  border: 2px solid  rgb(10 102 194);;
+}
+
 .form__input--floating>input {
-  font-size: 1rem;
+ 
   line-height: 1.33333;
   font-weight: 400;
   color: rgba(0,0,0,0.9);
@@ -92,10 +94,10 @@ li-icon {
 
 .form__input--floating>input:focus+label {
   top: -10px;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.42857;
   font-weight: 400;
-  color: rgba(0,0,0,0.9)
+  color: rgb(10 102 194);
 }
 
 .form__input--floating>input:valid+label {
@@ -160,8 +162,7 @@ button.from__button--floating:visited,button.from__button--floating:active,butto
   padding-right: 52px;
 }
 textarea, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
-  font-size: 1.4rem;
-  line-height: 1.42857;
+ 
   font-weight: 400;
   -webkit-transition-duration: 334ms;
   transition-duration: 334ms;
@@ -508,4 +509,54 @@ li-icon[type="linkedin-logo"][size="14dp"] {
 }
 .footer__base .footer__base__nav-list a:hover {
   text-decoration: underline;
+}
+
+
+ .alternate-signin__btn {
+  background-color: rgba(0,0,0,0);
+  border: 0;
+  border-radius: 2px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.6);
+  cursor: pointer;
+  display: inline;
+  /* font-size: 1.6rem; */
+  font-weight: 600;
+  font-family: inherit;
+  height: 40px;
+  overflow: hidden;
+  outline-width: 2px;
+  padding: 0 24px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition-duration: 167ms;
+  transition-duration: 167ms;
+  -webkit-transition-property: background-color,color,-webkit-box-shadow;
+  transition-property: background-color,color,-webkit-box-shadow;
+  transition-property: background-color,box-shadow,color;
+  transition-property: background-color,box-shadow,color,-webkit-box-shadow;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  vertical-align: middle;
+  z-index: 0;
+  -webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.6), inset 0 0 0 2px rgba(0,0,0,0), inset 0 0 0 1px rgba(0,0,0,0);
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.6), inset 0 0 0 2px rgba(0,0,0,0), inset 0 0 0 1px rgba(0,0,0,0);
+  color: var(--color-text-low-emphasis-shift, rgba(0,0,0,0.6)) !important;
+  border-radius: 28px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 42px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.mt-12 {
+  margin-top: 12px;
 }

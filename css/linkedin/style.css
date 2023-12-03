@@ -1,3 +1,7 @@
+
+BODY{
+  height: 100VH;
+}
 .linkedin-logo {
   display: block;
   margin: 32px 0 0 56px;
@@ -560,3 +564,33 @@ li-icon[type="linkedin-logo"][size="14dp"] {
 .mt-12 {
   margin-top: 12px;
 }
+
+
+@media screen and (min-width: 1440px) {
+
+ 
+.footer-base .footer-base-wrapper{
+    margin-top: 200px;
+  }
+  
+  }
+
+@media screen and (max-width: 600px) {
+
+  .footer-base .footer-base-wrapper,.footer-base .footer-base-nav-list{
+    display: unset;
+
+  }
+  .copyright{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+  }
+  li-icon[type="linkedin-logo"][size="14dp"] {
+    width: 3.6rem;
+    height: 1.1rem;
+  }
+}
+

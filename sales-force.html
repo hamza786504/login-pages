@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <title>Login | Salesforce</title>
+    <!-- bootstrap links -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- css style file -->
+    <link rel="stylesheet" href="./css/sales-force/style.css" />
+  </head>
+
+  <body class="bg-light">
+    <div class="login-page">
+      <div class="container-fluid p-sm-0">
+        <div class="row justify-content-center align-items-center">
+          <div
+            class="left login-form text-center d-flex flex-column align-items-center"
+          >
+            <div class="form_cover d-flex align-items-center flex-column justify-content-center flex-grow-1">
+              <div class="logo">
+                <img src="./images/sales-force/logo214.svg" alt="" />
+              </div>
+              <div class="card">
+                <div class="card-body text-start">
+                  <form action="" method="post">
+                    <div class="mb-3">
+                      <label for="username" class="form-label"
+                        >Nom d'utilisateur</label
+                      >
+                      <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        required
+                        class="form-control"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="password" class="form-label"
+                        >Mot de passe</label
+                      >
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        required
+                        class="form-control"
+                      />
+                    </div>
+                    <div>
+                      <input
+                        type="submit"
+                        id="login_button"
+                        class="form-control"
+                        value="Se connector"
+                      />
+                    </div>
+                    <div style="padding: 16px 0;">
+                      <label for="remember" class="form-label"
+                        ><input type="checkbox" name="remember" id="remember" />
+                        Mémoriser mes informations</label
+                      >
+                    </div>
+                    <div
+                      class="d-flex justify-content-between login-form-links"  style="border-top: 1px solid rgb(244, 246, 249); padding-top: 16px;"
+                    >
+                      <a href="#" class="login-links">Mot de passe oublié ?</a>
+                      <a href="#" class="login-links"
+                        >Utiliser un domaine personnalisé</a
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="mx-auto login-buttom">
+                <p class="text-muted mb-0">
+                  <span style="margin-right: 16px; color: rgb(22, 50, 92);">Pas client ?</span>
+                  <a href="" class="btn btn-secondarys">Essayer gratuitement</a>
+                </p>
+              </div>
+            </div>
+            <div class="footer">
+              <p class="mb-0">
+                © 2023 Salesforce, Inc. Tous droits réservés. |
+                <a href="/">Confidentialité</a>
+              </p>
+            </div>
+          </div>
+          <div class="right banner">
+            <div
+              class="login-details"
+              style="background-image: url(./images/sales-force/login-ai-day-bg.jpg)"
+            >
+              <div class="row">
+                <div class="col-12">
+                  <div class="content">
+                    <h3 class="title title-2">
+                      Découvrez l'IA de confiance pour les entreprises,
+                      uniquement sur Salesforce+.
+                    </h3>
+                    <div class="content-details">
+                      <a href="#" class="btn btn-secondarys" style="color: #0b5cab !important; padding: 0 24px; border: none !important;">
+                        REGARDER LE REPLAY
+                      </a>
+                    </div>
+                    <img
+                      src="./images/sales-force/login-ai day-fg.png"
+                      alt=""
+                      class="dashboard-img img-fluid"
+                      style="width: 100%; z-index: 10; max-width: 608px;"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"
+      integrity="sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
